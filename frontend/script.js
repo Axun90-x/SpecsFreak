@@ -9,6 +9,23 @@ function safeText(value) {
   return String(value);
 }
 
+function formatAudienceRating(value) {
+  const raw = safeText(value).trim();
+  if (!raw) return "Not specified";
+
+  const normalized = raw.toUpperCase();
+  const map = {
+    E: "Everyone",
+    "E10+": "Everyone 10+",
+    T: "Teen",
+    M: "Mature 17+",
+    AO: "Adults Only 18+",
+    RP: "Rating Pending",
+  };
+
+  return map[normalized] || raw;
+}
+
 function renderResults(recommendations) {
   if (!recommendations || recommendations.length === 0) {
     resultsBox.innerHTML = "<p>No recommendations found.</p>";
@@ -24,7 +41,7 @@ function renderResults(recommendations) {
       const genre = safeText(item.genre);
       const platform = safeText(item.platform);
       const type = safeText(item.type);
-      const rating = safeText(item.rating);
+      const rating = formatAudienceRating(item.rating);
       const url = safeText(item.url);
 
       return `

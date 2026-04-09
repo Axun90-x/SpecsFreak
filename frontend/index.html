@@ -4,24 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Specs Freak | Game Recommender</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="bg-orb orb-1"></div>
-    <div class="bg-orb orb-2"></div>
-    <div class="bg-orb orb-3"></div>
+    <div class="background-grid" aria-hidden="true"></div>
+    <div class="glow glow-top" aria-hidden="true"></div>
+    <div class="glow glow-bottom" aria-hidden="true"></div>
+    <div class="particles" aria-hidden="true">
+      <span class="particle p1"></span>
+      <span class="particle p2"></span>
+      <span class="particle p3"></span>
+      <span class="particle p4"></span>
+      <span class="particle p5"></span>
+      <span class="particle p6"></span>
+      <span class="particle p7"></span>
+      <span class="particle p8"></span>
+      <span class="particle p9"></span>
+      <span class="particle p10"></span>
+      <span class="particle p11"></span>
+      <span class="particle p12"></span>
+      <span class="particle p13"></span>
+      <span class="particle p14"></span>
+      <span class="particle p15"></span>
+      <span class="particle p16"></span>
+      <span class="particle p17"></span>
+      <span class="particle p18"></span>
+      <span class="particle p19"></span>
+      <span class="particle p20"></span>
+      <span class="particle p21"></span>
+      <span class="particle p22"></span>
+    </div>
 
     <main class="container">
       <header class="hero">
-        <p class="badge">NLP-Based Game Discovery</p>
-        <h1>Specs Freak</h1>
+        <nav class="nav">
+          <p class="logo">Specs Freak</p>
+          <a class="nav-link" href="#recommend">Try demo</a>
+        </nav>
+
+        <p class="badge">AI + NLP Game Discovery</p>
+        <h1>Find your next favorite game with one prompt.</h1>
         <p class="subtitle">
-          Describe your ideal game in plain language and get intelligent recommendations
-          beyond basic genre filtering.
+          Tell us your vibe in natural language and get smart recommendations based on style,
+          tone, genre, platform, and review quality.
         </p>
       </header>
 
-      <section class="search-card">
+      <section id="recommend" class="search-card">
         <form id="recommend-form">
           <label for="prompt">What game mood or experience do you want?</label>
           <div class="input-row">
@@ -29,7 +64,7 @@
               id="prompt"
               name="prompt"
               type="text"
-              placeholder="e.g. dark story-rich RPG with open world exploration"
+              placeholder="e.g. emotional story game with exploration and immersive soundtrack"
               required
             />
             <button id="submit-btn" type="submit">Find Games</button>
