@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Specs Freak - NLP-Based Video Game Recommendation Website
 
 This project includes:
@@ -29,3 +30,7 @@ This project includes:
   }
   ```
 - Returns ranked game recommendations from your dataset.
+=======
+# Hybrid-NLP-Based-Video-Game-Recommendation-System-with-Sentiment-Analysis
+In this project, we propose a Hybrid NLP-Based Video Game Recommendation System that combines content-based filtering with sentiment analysis to generate personalized recommendations. 
+>>>>>>> 62bb53556c40882e7fb4999c50ac47c3ea67a1fa
