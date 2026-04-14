@@ -37,3 +37,32 @@ It allows users to input natural language prompts (e.g., *"dark story-rich RPG w
 ---
 
 ## 📂 Project Structure
+Hybrid-Game-Recommender/
+│
+├── colab_notebooks/             # 📊 Main development done here
+│   ├── Game_Recommender.ipynb   # NLP + recommendation system
+│   ├── Sentiment_Analysis.ipynb # Sentiment model
+│   └── EDA.ipynb                # Data analysis
+│
+├── backend/                     # 🔧 Converted API from Colab
+│   ├── app.py                   # Flask/FastAPI server
+│   ├── recommender.py           # Logic extracted from notebook
+│   ├── sentiment.py             # Sentiment logic
+│   └── model/                   # Saved models from Colab
+│       ├── tfidf.pkl
+│       └── similarity.pkl
+│
+├── dataset/                     # 📁 Dataset used in Colab
+│   └── games.csv
+│
+├── frontend/                    # 🌐 Website UI
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+│
+├── outputs/                     # 📈 Results / screenshots
+│   └── sample_results.png
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
