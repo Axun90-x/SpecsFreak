@@ -1,36 +1,39 @@
-<<<<<<< HEAD
-# Specs Freak - NLP-Based Video Game Recommendation Website
+# 🎮 Hybrid NLP-Based Video Game Recommendation System
 
-This project includes:
-- A **Python backend API** that loads your dataset and performs NLP recommendations.
-- A **frontend website** with a warm color palette, animated background, and prompt input.
-- A working connection between frontend and backend.
+This project is an advanced **Video Game Recommendation System** that combines:
+- 🧠 **Natural Language Processing (NLP)**
+- ⭐ **Sentiment Analysis**
+- 🔍 **Content-Based Filtering**
 
-## Run Locally
+It allows users to input natural language prompts (e.g., *"dark story-rich RPG with open world"*) and receive **personalized game recommendations** based on game descriptions and user sentiment.
 
-1. Open terminal in `d:\Specs Freak`
-2. Create and activate virtual environment (optional):
-   - `python -m venv .venv`
-   - `.venv\Scripts\activate`
-3. Install dependencies:
-   - `pip install -r requirements.txt`
-4. Run the app:
-   - `python backend\app.py`
-5. Open:
-   - `http://localhost:5000`
+---
 
-## API
+## 🚀 Features
 
-- **POST** `/api/recommend`
-- Body:
-  ```json
-  {
-    "prompt": "dark story rich RPG with open world",
-    "top_n": 10
-  }
-  ```
-- Returns ranked game recommendations from your dataset.
-=======
-# Hybrid-NLP-Based-Video-Game-Recommendation-System-with-Sentiment-Analysis
-In this project, we propose a Hybrid NLP-Based Video Game Recommendation System that combines content-based filtering with sentiment analysis to generate personalized recommendations. 
->>>>>>> 62bb53556c40882e7fb4999c50ac47c3ea67a1fa
+- 🎯 NLP-based recommendation engine
+- 😊 Sentiment analysis for better personalization
+- 🔗 Hybrid filtering approach (content + sentiment)
+- 🌐 Interactive frontend with modern UI
+- ⚡ Fast API response using Python backend
+- 🎨 Animated UI with warm color palette
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend:**
+- HTML, CSS, JavaScript
+- Animated UI / Responsive Design
+
+**Backend:**
+- Python (Flask / FastAPI)
+- NLP Libraries (NLTK / Scikit-learn)
+
+**Other Tools:**
+- Pandas, NumPy
+- Dataset-based recommendation system
+
+---
+
+## 📂 Project Structure
